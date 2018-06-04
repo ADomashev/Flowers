@@ -15,6 +15,11 @@ public class Ribbon extends Accessory{
 	public void setLongRibbon(int longRibbon) {
 		this.longRibbon = longRibbon;
 	}
+
+	@Override
+	public String toString() {
+		return "Ribbon [longRibbon=" + longRibbon + "]";
+	}
 	
 	
 }

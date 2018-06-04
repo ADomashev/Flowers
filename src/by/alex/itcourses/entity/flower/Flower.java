@@ -32,6 +32,11 @@ public class Flower {
 	public void setPrice(double price) {
 		this.price = price;
 	}
+	@Override
+	public String toString() {
+		return "size=" + size + ", level=" + level + ", price=" + price + "";
+	}
+	
 	
 	
 }

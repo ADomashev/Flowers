@@ -4,19 +4,24 @@ import by.alex.itcourses.util.LevelOfFreshness;
 
 public class NaturalFlower extends Flower{
 	
-	private boolean life;
+	private boolean inPot;
 	
-	public NaturalFlower(int size, LevelOfFreshness level, double price,boolean life) {
+	public NaturalFlower(int size, LevelOfFreshness level, double price,boolean inPot) {
 		super(size, level, price);
-		this.life=life;
+		this.inPot=inPot;
 	}
 
-	public boolean isLife() {
-		return life;
+	public boolean getInPot() {
+		return inPot;
 	}
 
-	public void setLife(boolean life) {
-		this.life = life;
+	public void setInPot(boolean life) {
+		this.inPot = life;
+	}
+
+	@Override
+	public String toString() {
+		return "NaturalFlower life=" + getInPot() + " "+ super.toString();
 	}
 	
 	

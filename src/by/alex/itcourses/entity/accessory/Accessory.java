@@ -21,6 +21,10 @@ public class Accessory {
 	public void setName(String name) {
 		this.name = name;
 	}
+	@Override
+	public String toString() {
+		return "Accessory price=" + price + ", name=" + name + "";
+	}
 	
 	
 	

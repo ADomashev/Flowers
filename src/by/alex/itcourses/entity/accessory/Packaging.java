@@ -16,6 +16,11 @@ public class Packaging extends Accessory {
 	public void setColor(String color) {
 		this.color = color;
 	}
+
+	@Override
+	public String toString() {
+		return "Packaging [color=" + color + "]";
+	}
 	
 	
 	

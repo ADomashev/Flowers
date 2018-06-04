@@ -1,5 +1,5 @@
 package by.alex.itcourses.util;
 
 public enum LevelOfFreshness {
-	FRESH , MEDIUM, DRY
+	FRESH , MEDIUM, DRY, NOT_NATURAL
 }

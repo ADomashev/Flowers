@@ -25,12 +25,12 @@ public class BouquetUtil {
 			}
 		}
 	}
+	
 	public static void sortByFreshness(Bouquet bouquet) {
 		if(bouquet.getFlowers()!=null) {
 			quicksort(bouquet.getFlowers(),(bouquet.getFlowers().length-bouquet.getFlowers().length),bouquet.getFlowers().length-1);
 		}
 	}
-	
 	
 	private static void quicksort(Flower [] arr,int first,int last) {
 		Flower temp;
@@ -52,6 +52,7 @@ public class BouquetUtil {
 		if(firstElem<last) {quicksort(arr,firstElem,last);}
 		
 	}
+	
 	public static double getBouquetPrice(Bouquet bouquet) {
 		double result=0;
 			for (int i = 0; i < bouquet.getFlowers().length; i++) {

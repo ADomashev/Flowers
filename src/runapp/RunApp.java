@@ -39,7 +39,7 @@ public class RunApp {
 		BouquetUtil.printBouquet(bouquet);
 		
 		System.out.println();
-		System.out.println("Whole price :"+BouquetUtil.getBouquetPrice(bouquet));
+		System.out.println("Full price :"+BouquetUtil.getBouquetPrice(bouquet));
 
 	}
 

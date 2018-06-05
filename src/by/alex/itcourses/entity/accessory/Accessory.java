@@ -23,7 +23,7 @@ public class Accessory {
 	}
 	@Override
 	public String toString() {
-		return "Accessory price=" + price + ", name=" + name + "";
+		return ", price=" + getPrice() + ", name=" + getName() + "";
 	}
 	
 	

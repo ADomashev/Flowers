@@ -7,8 +7,13 @@ public class Bouquet {
 	
 	private Flower[] flowers;
 	private Accessory[] access;
+	private double price;
 	
 	
+	public double getPrice() {
+		return price;
+	}
+
 	public Flower[] getFlowers() {
 		return flowers;
 	}
@@ -36,16 +41,16 @@ public class Bouquet {
 			setFlowers(tmp);
 		}
 	}
-
-	public void addFlower (Accessory acc) {
-		if(access == null) {
-			this.access = new Accessory[] {acc};
+	
+	public void addAccessory (Accessory accessory) {
+		if(getAccess() == null) {
+			setAccess(new Accessory[] {accessory});
 		}else {
-			Accessory[] tmp = new Accessory[access.length+1];
-			for (int i = 0; i < access.length; i++) {
-				tmp[i] = access[i];
-			}tmp[tmp.length-1]=acc;
-			access = tmp;
+			Accessory[] tmp = new Accessory[getAccess().length+1];
+			for (int i = 0; i < getAccess().length; i++) {
+				tmp[i] = getAccess()[i];
+			}tmp[tmp.length-1]=accessory;
+			setAccess(tmp);
 		}
 	}
 }

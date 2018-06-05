@@ -4,7 +4,7 @@ public class Packaging extends Accessory {
 	
 	private String color;
 
-	public Packaging(String color,double price,String name) {
+	public Packaging(String color,String name,double price) {
 		super(price,name);
 		this.color = color;
 	}
@@ -19,7 +19,7 @@ public class Packaging extends Accessory {
 
 	@Override
 	public String toString() {
-		return "Packaging [color=" + color + "]";
+		return "Packaging color=" + getColor() + super.toString();
 	}
 	
 	

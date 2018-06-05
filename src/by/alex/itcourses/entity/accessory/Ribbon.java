@@ -18,8 +18,6 @@ public class Ribbon extends Accessory{
 
 	@Override
 	public String toString() {
-		return "Ribbon [longRibbon=" + longRibbon + "]";
-	}
-	
-	
+		return "Ribbon longRibbon=" + getLongRibbon() + super.toString();
+	}	
 }

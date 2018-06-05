@@ -23,7 +23,7 @@ public class ArtificialFlower extends Flower {
 
 	@Override
 	public String toString() {
-		return "ArtificialFlower material=" + material + " "+ super.toString();
+		return "ArtificialFlower material=" + getMaterial() + " "+ super.toString();
 	}
 	
 	

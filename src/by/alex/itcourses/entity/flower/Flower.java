@@ -34,7 +34,7 @@ public class Flower {
 	}
 	@Override
 	public String toString() {
-		return "size=" + size + ", level=" + level + ", price=" + price + "";
+		return "size=" + getSize() + ", level=" + getPrice() + ", price=" + getPrice();
 	}
 	
 	
